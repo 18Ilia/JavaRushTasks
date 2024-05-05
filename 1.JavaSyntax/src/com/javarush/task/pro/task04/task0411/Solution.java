@@ -8,8 +8,10 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        for (int x = 0; x <= 15; x++){
-            System.out.println(x);
+        for (int x = 1; x <= 15; x++){
+            if (x % 2 == 0) {
+                System.out.println(x);
+            }
         }
 
     }
