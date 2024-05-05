@@ -13,9 +13,10 @@ public class Solution {
         int secondMin = Integer.MAX_VALUE;
           while (scanner.hasNextInt()){
                 int x = scanner.nextInt();
-                if (x <= firstMin){
-                    firstMin = x;
-                } else if (x <= secondMin) {
+                if (x < firstMin){
+                    secondMin = firstMin;// эта команда, при котором секондМин, теперь становится равным фирстМин
+                    firstMin = x;// то есть перезаписывается
+                } else if (x < secondMin && x != firstMin) {
                     secondMin = x;
                 }
           }
