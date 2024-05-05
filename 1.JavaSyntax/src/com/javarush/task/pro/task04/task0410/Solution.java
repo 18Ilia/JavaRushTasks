@@ -9,15 +9,18 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int min = scanner.nextInt();
-        int secondMin = scanner.nextInt();
-        if (min > secondMin){
-            int temp = min;
-            min = secondMin;
-            secondMin = temp;
+        int firstMin = Integer.MAX_VALUE;
+        int secondMin = Integer.MAX_VALUE;
+          while (scanner.hasNextInt()){
+                int x = scanner.nextInt();
+                if (x <= firstMin){
+                    firstMin = x;
+                } else if (x <= secondMin) {
+                    secondMin = x;
+                }
+          }
+        System.out.println(secondMin);
 
-        }
-        //напишите тут ваш код
 
     }
 }
