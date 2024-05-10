@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();
-        int number = scanner.nextInt();
-        do {
-            System.out.println(s);
-            number--;
-        }while (0 < number && number < 4);
+                Scanner scanner = new Scanner(System.in);
+                String s = scanner.nextLine();
+                int number = scanner.nextInt();
+                do {
+                    System.out.println(s);
+                    number--;
+                }while (0 < number && number < 4);
+            }
     }
-}
