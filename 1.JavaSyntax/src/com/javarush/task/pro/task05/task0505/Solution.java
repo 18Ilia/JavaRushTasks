@@ -1,5 +1,6 @@
 package com.javarush.task.pro.task05.task0505;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /* 
@@ -11,12 +12,20 @@ public class Solution {
         int[] numbers;
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        if (number > 0){
+        if (number > 0) {
             numbers = new int[number];
+            for (int i = 0; i < number; i++) {
+                numbers[i] = scanner.nextInt();
+            }
+            if (number % 2 != 0) {
+                for (int i = 0; i < numbers.length; i++) {
+                    System.out.println(numbers[i]);
+                }
+            } else {
+                for (int i = numbers.length - 1; numbers.length >= 0; i--) {
+                    System.out.println(numbers[i]);
+                }
+            }
         }
-        for (int i = 0; i < number; i++){
-            int number1 = scanner.nextInt();
-        }
-
     }
 }
